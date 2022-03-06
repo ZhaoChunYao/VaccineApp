@@ -1,0 +1,162 @@
+(c) Copyright IBM Corporation 1993,2007
+Command Line Processor for DB2 Client 11.5.4.0
+
+You can issue database manager commands and SQL statements from the command 
+prompt. For example:
+    db2 => connect to sample
+    db2 => bind sample.bnd
+
+For general help, type: ?.
+For command help, type: ? command, where command can be
+the first few keywords of a database manager command. For example:
+ ? CATALOG DATABASE for help on the CATALOG DATABASE command
+ ? CATALOG          for help on all of the CATALOG commands.
+
+To exit db2 interactive mode, type QUIT at the command prompt. Outside 
+interactive mode, all commands must be prefixed with 'db2'.
+To list the current command option settings, type LIST COMMAND OPTIONS.
+
+For more detailed help, refer to the Online Reference Manual.
+
+db2 => db2 => db2 => db2 => db2 => CONNECT TO cs421
+
+   Database Connection Information
+
+ Database server        = DB2/LINUXX8664 11.5.4.0
+ SQL authorization ID   = CZHAO31
+ Local database alias   = CS421
+
+
+db2 => db2 => db2 => db2 => db2 => db2 => db2 => INSERT INTO MYTEST01 (id, value) VALUES(4, 1300)
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => db2 (cont.) => db2 (cont.) => db2 (cont.) => db2 (cont.) => INSERT INTO MYTEST01 (id, value) VALUES (7, 5144) ,(3, 73423) ,(6, -1222)
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Location values('Jewish General','Montreal','Code A','Street A')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Location values('Hospital A','Montreal','Code B','Street B')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Location values('Hospital B','Montreal','Code C','Street C')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Location values('Hospital C','nonMontreal','Code D','Street D')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Location values('Hospital D','nonMontreal','Code E','Street E')
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Nurse values(1,'Nurse A','Jewish General')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Nurse values(2,'Nurse B','Hospital A')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Nurse values(3,'Nurse C','Hospital B')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Nurse values(4,'Nurse D','Hospital C')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Nurse values(5,'Nurse D','Hospital D')
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Registrant values(1,'Montreal','Code 1','Street 1','Jane Doe','female',111,'2020-01-01','Children below 10',2)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Registrant values(2,'City A','Code 2','Street 2','B','female',222,'2000-01-01','Everyone Else',4)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Registrant values(3,'City B','Code 3','Street 3','C','male',333,'1999-01-01','Essential Service Workers',3)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Registrant values(4,'City C','Code 4','Street 1','D','female',444,'2001-01-01','Health Care workers',1)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Registrant values(5,'City D','Code 5','Street 3','E','male',555,'2020-02-01','Children below 10',2)
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Assignment values(1,'Jewish General','2021-3-20')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Assignment values(2,'Jewish General','2021-3-20')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Assignment values(1,'Hospital A','2021-2-6')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Assignment values(3,'Hospital C','2021-2-6')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Assignment values(4,'Jewish General','2021-1-19')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Assignment values(5,'Hospital D','2021-1-18')
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Vaccine values('Pfizer-BioNTech',3,3)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vaccine values('D',3,3)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vaccine values('C',3,3)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vaccine values('B',3,3)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vaccine values('A',3,3)
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Batch values('Pfizer-BioNTech',1,'2021-1-11','2021-1-25',100,'Hospital D')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Batch values('Pfizer-BioNTech',2,'2021-1-11','2021-1-25',100,'Jewish General')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Batch values('Pfizer-BioNTech',3,'2021-1-29','2021-2-13',100,'Hospital C')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Batch values('Pfizer-BioNTech',4,'2021-1-29','2021-2-13',100,'Hospital A')
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Batch values('Pfizer-BioNTech',5,'2021-3-13','2021-3-27',100,'Jewish General')
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Vial values('Pfizer-BioNTech',1,10,5,5)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vial values('Pfizer-BioNTech',2,22,4,1)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vial values('Pfizer-BioNTech',3,13,3,3)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vial values('Pfizer-BioNTech',2,43,1,1)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Vial values('Pfizer-BioNTech',5,31,2,2)
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => insert into Slot values('Hospital D',1,'2021-1-18','00.00.00','2021-1-17','00.00.00',5,'Pfizer-BioNTech',1,10)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Slot values('Jewish General',1,'2021-1-19','00.00.00','2021-1-18','00.00.00',1,'Pfizer-BioNTech',2,22)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Slot values('Hospital C',1,'2021-2-6','00.00.00','2021-2-5','00.00.00',3,'Pfizer-BioNTech',3,13)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Slot values('Hospital A',1,'2021-2-6','00.00.00','2021-2-5','00.00.00',1,'Pfizer-BioNTech',2,43)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Slot values('Jewish General',1,'2021-3-20','00.00.00','2021-3-19','00.00.00',2,'Pfizer-BioNTech',5,31)
+DB20000I  The SQL command completed successfully.
+
+db2 => insert into Slot(name,slotNo,date,time) values('Jewish General',4,'2021-3-20','08.30.00')
+DB20000I  The SQL command completed successfully.
+
+db2 => db2 => 
